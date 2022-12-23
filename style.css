@@ -11,7 +11,8 @@
 .solution-section .container,
 .vdo-section .container,
 .top-student-section .container,
-.amazing-courses-section .container{
+.amazing-courses-section .container,
+.popular-latest .container{
     max-width: 1300px;
 }
 .solution-section .title .head,
@@ -317,6 +318,131 @@
     width: 20px;
     display: inline-block;
 }
+
+
+
+
+/* popular latest */
+.popular-latest{
+    background-color: #F6F8FF;
+    padding: 50px 0;
+    position: relative;
+}
+.popular-latest .popular-bg1{
+    position: absolute;
+    left: 0;
+    top: -50%;
+    max-width: 800px;
+}
+.popular-latest .popular-bg2{
+    position: absolute;
+    right: 0;
+    top: -50%;
+    max-width: 800px;
+}
+.flat-courses{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.flat-cover-img{
+    object-fit: cover;
+    border-radius: 20px;
+    min-height: 200px;
+}
+.popular-latest .id{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular-latest .id .user img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.popular-latest .id .user{
+    display: flex;
+    align-items: center;
+    font-weight: 500
+}
+.popular-latest .id .user p{
+    margin-bottom: 0;
+}
+.popular-latest .id .batch p{
+    margin-bottom: 0;
+    background: #FFFFFF;
+    color: #0B7077;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.flat-courses .head{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #0A033C;
+}
+.flat-courses .icon-bar{
+    margin: 15px 0;
+    font-weight: 600;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.flat-courses .icon-bar img{
+    margin-right: 8px;
+    margin-top: -5px;
+    width: 20px;
+    display: inline-block;
+}
+.flat-courses .icon-bar span{
+    color: #928FAA;
+    margin-left: 3px;
+}
+.flat-courses .price{
+    display: flex;
+    justify-content: space-between;
+}
+.flat-courses .price .main-price{
+    color: #696984;
+    font-size: 15px;
+    margin: 0;
+}
+.flat-courses .price .main-price span{
+    color: #0B7077;
+    font-weight: 800;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.flat-courses .price .vdo-info{
+    color: #0A033C;
+    margin-bottom: 0;
+}
+.flat-courses .price .vdo-info img{
+    margin-right: 8px;
+    margin-top: -5px;
+    width: 20px;
+    display: inline-block;
+}
+
+.popular .title{
+    font-size: 30px;
+    color: #0A033C;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
