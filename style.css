@@ -8,19 +8,25 @@
     z-index: 1;
     position: relative;
 }
-.solution-section .container,.vdo-section .container{
+.solution-section .container,
+.vdo-section .container,
+.top-student-section .container,
+.amazing-courses-section .container{
     max-width: 1300px;
 }
-.solution-section .title .head{
+.solution-section .title .head,
+.top-student-section .title .head{
     font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 35px;
     color: #2F327D;
 }
-.solution-section .title .head span{
+.solution-section .title .head span,
+.top-student-section .title span{
     color: #F48C06;
 }
-.solution-section .title .des{
+.solution-section .title .des,
+.top-student-section .title .des{
     color: #696984;
     font-size: 17px;
     width: 95%;
@@ -65,19 +71,22 @@
     padding: 30px 0;
     position: relative;
 }
-.vdo-section-inner{
+.vdo-section-inner,
+.amazing-courses-inner{
     background: #F3F7FF;
     border-radius: 20px;
     padding: 30px;
     z-index: 1;
     position: relative;
 }
-.vdo-section-inner .title{
+.vdo-section-inner .title,
+.amazing-courses-section .title{
     font-size: 24px;
     color: #2F327D;
     margin-bottom: 0;
 }
-.vdo-section-inner .buttons button{
+.vdo-section-inner .buttons button,
+.amazing-courses-section .buttons button{
     background: #FFFFFF;
     box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
     border-radius: 10px;
@@ -151,8 +160,170 @@
 }
 
 /* top student section */
+.top-student-section{
+    padding: 30px 0;
+    position: relative;
+}
 .top-student-wraper{
     background: #F7F9FF;
-    border-radius: 100px;
+    border-radius: 50px;
     padding: 50px 0;
 }
+.top-student-section .title{
+    text-align: center;
+}
+.top-student-section .image-wraper{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.top-student-section .image-wraper img{
+    max-height: 150px;
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+.top-student-section .image-wraper p{
+    font-size: 20px;
+    color: #E13468;
+    font-weight: 700;
+}
+.top-student-section .image-wraper p span{
+    color: #5B61EB;
+    margin-right: 10px;
+}
+.top-student-section .left-col{
+    background-color: #F5F6F9;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.top-student-section .right-head{
+    font-size: 30px;
+    color: #2F327D;
+    margin-bottom: 0;
+}
+.top-student-section .right-col .point{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.top-student-section .right-col .point-wraper .bg{
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
+}
+.top-student-section .right-col .right-title{
+    font-size: 20px;
+    color: #0A033C;
+    margin: 0;
+}
+.top-student-section .right-col .right-des{
+    font-size: 14px;
+    color: #696984;
+    margin: 0;
+}
+.topper{
+    max-width: 200px;
+    margin: auto;
+}
+.top-green{
+    position: absolute;
+    left: 12%;
+    top: 30%;
+}
+.top-purple{
+    position: absolute;
+    left: 55%;
+    top: 70%;
+    max-width: 150px;
+}
+
+
+/* amazing courses section */
+.amazing-courses-section{
+    position: relative;
+    padding: 30px 0;
+}
+.single-amazing{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.single-amazing .cover-img{
+    max-height: 200px;
+    width: 100%;
+    border-radius: 20px;
+}
+.single-amazing .icon-bar{
+    margin: 15px 0;
+    font-weight: 600;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.single-amazing .icon-bar img{
+    margin-right: 8px;
+    margin-top: -5px;
+    width: 20px;
+    display: inline-block;
+}
+.single-amazing .icon-bar span{
+    color: #928FAA;
+    margin-left: 3px;
+}
+.single-amazing .head{
+    font-weight: 700;
+    font-size: 20px;
+    color: #0A033C;
+    margin-bottom: 5px;
+}
+.single-amazing .des{
+    font-size: 14px;
+    color: #5D5A6F;
+    line-height: 25px;
+}
+.single-amazing .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single-amazing .price b{
+    color: #F48C06;
+    font-size: 20px;
+}
+.single-amazing .price p{
+    color: #0A033C;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.single-amazing .price p img{
+    margin-top: -6px;
+    margin-right: 8px;
+    width: 20px;
+    display: inline-block;
+}
+
+
+
+
+
+/* .swiper {
+    width: 600px;
+    height: 300px;
+} */
+
