@@ -7,7 +7,9 @@
         <meta name="Description" content="Enter your description here" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <!-- googlw fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600&family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet" />
 
@@ -155,7 +157,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="right-col">
-                                    <p class="right-head">Rankin de alumnos semanal</p>
+                                    <p class="right-head mt-4 mt-lg-0">Rankin de alumnos semanal</p>
 
 
                                     <div class="d-flex mt-3">
@@ -227,10 +229,10 @@
                         </div>
                     </div>
                     <div class="amazing-courses">
-                        <div class="row align-items-center justify-content-between">
+                        <div class="carousel-section owl-carousel">
 
 
-                            <div class="col-lg-4 col-md-6 col-sm-10">
+                    
                                 <div class="single-amazing">
                                     <img src="https://images.unsplash.com/photo-1622701361344-c1df43ca29ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJvb2slMjBvcGVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid cover-img">
                                     <div class="icon-bar">
@@ -245,8 +247,8 @@
                                         <p><img src="img/Calendar.png" alt="" class="img-fluid">22/08/01 - 16:00</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-10">
+                            
+                            
                                 <div class="single-amazing">
                                     <img src="https://images.unsplash.com/photo-1622701361344-c1df43ca29ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJvb2slMjBvcGVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid cover-img">
                                     <div class="icon-bar">
@@ -261,8 +263,8 @@
                                         <p><img src="img/Calendar.png" alt="" class="img-fluid">22/08/01 - 16:00</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-10">
+                            
+                            
                                 <div class="single-amazing">
                                     <img src="https://images.unsplash.com/photo-1622701361344-c1df43ca29ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJvb2slMjBvcGVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid cover-img">
                                     <div class="icon-bar">
@@ -277,7 +279,7 @@
                                         <p><img src="img/Calendar.png" alt="" class="img-fluid">22/08/01 - 16:00</p>
                                     </div>
                                 </div>
-                            </div>
+                            
 
 
                         </div>
@@ -391,7 +393,7 @@
 
                     </div>
                     <div class="col-md-6 popular">
-                        <p class="title">Últimos Cursos</p>
+                        <p class="title mt-lg-0 mt-5">Últimos Cursos</p>
 
 
                         <div class="flat-courses">
@@ -497,30 +499,16 @@
 
 
 
-        <!-- <div class="swiper"> -->
-            <!-- Additional required wrapper -->
-            <!-- <div class="swiper-wrapper" -->
-                <!-- Slides -->
-                <!-- <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                
-            </div> -->
-<!-- 
-            
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            
-
-        </div> -->
 
 
 
 
 
 
-
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
 
 
 
@@ -534,32 +522,43 @@
 
 <!-- triger owl carousel -->
 <script>
+    $(document).ready(function(){
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:3,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            nav:false,
+            smartSpeed:1000,
+            animateOut:'',
+            animateIn:'',
+            stagePadding:5,
+            margin:40,
 
-
-    const hola = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "vertical",
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        speed: 400,
-        autoplay:{ 
-            reverseDirection: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-
-    });
-
-
-
-
+            
+            responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:false,
+                            dots:false,
+                        },
+                        600:{
+                            items:1,
+                            nav:false,
+                        },
+                        1000:{
+                            items:3,
+                            nav:false,
+                        }
+                    }
+        });
+        
+        });
+});
 </script>
-
 
 
 

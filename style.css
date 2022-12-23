@@ -267,6 +267,7 @@
     max-height: 200px;
     width: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
 .single-amazing .icon-bar{
     margin: 15px 0;
@@ -436,20 +437,43 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.swiper {
-    width: 600px;
-    height: 300px;
+/* owl carousel */
+.carousel-section{
+    position: relative;
+}
+.owl-nav .owl-prev{
+    opacity: 0;
+    height: 34px;
+    width: 50px;
+    position: absolute;
+    right: 74px;
+    top: -40px;
+}
+.owl-nav .owl-next{
+    opacity: 0;
+    height: 34px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: -40px;
 }
 
+
+
+
+
+
+@media only screen and (max-width:968px) {
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next,
+    .popular-bg1,
+    .popular-bg2,
+    .solution-section .angle,
+    .solution-section .circle{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+
+}
